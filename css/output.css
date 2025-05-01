@@ -219,20 +219,11 @@
   .border-collapse {
     border-collapse: collapse;
   }
-  .scale-110 {
-    --tw-scale-x: 110%;
-    --tw-scale-y: 110%;
-    --tw-scale-z: 110%;
-    scale: var(--tw-scale-x) var(--tw-scale-y);
-  }
   .scale-120 {
     --tw-scale-x: 120%;
     --tw-scale-y: 120%;
     --tw-scale-z: 120%;
     scale: var(--tw-scale-x) var(--tw-scale-y);
-  }
-  .transform {
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .resize {
     resize: both;
@@ -275,20 +266,11 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 0.5px;
   }
-  .border-fuchsia-300 {
-    border-color: var(--color-fuchsia-300);
-  }
   .border-b-gray-500 {
     border-bottom-color: var(--color-gray-500);
   }
   .bg-box-color {
     background-color: var(--color-box-color);
-  }
-  .bg-fuchsia-100 {
-    background-color: var(--color-fuchsia-100);
-  }
-  .bg-fuchsia-300 {
-    background-color: var(--color-fuchsia-300);
   }
   .bg-hero-color {
     background-color: var(--color-hero-color);
@@ -298,9 +280,6 @@
   }
   .fill-svg-color {
     fill: var(--color-svg-color);
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -342,29 +321,14 @@
   .text-\[\#25D366\] {
     color: #25D366;
   }
-  .text-\[\#48b564\] {
-    color: #48b564;
-  }
-  .text-\[\#81\] {
-    color: #81;
-  }
   .text-\[\#1877F2\] {
     color: #1877F2;
-  }
-  .text-\[\#8134AF\] {
-    color: #8134AF;
   }
   .text-\[white\] {
     color: white;
   }
   .text-hover-color {
     color: var(--color-hover-color);
-  }
-  .text-main-color {
-    color: var(--color-main-color);
-  }
-  .text-stone-950 {
-    color: var(--color-stone-950);
   }
   .text-white {
     color: var(--color-white);
@@ -398,13 +362,6 @@
     --tw-duration: 1000ms;
     transition-duration: 1000ms;
   }
-  .group-hover\/icon-hover\:text-hover-color {
-    &:is(:where(.group\/icon-hover):hover *) {
-      @media (hover: hover) {
-        color: var(--color-hover-color);
-      }
-    }
-  }
   .hover\:bg-hover-color {
     &:hover {
       @media (hover: hover) {
@@ -415,6 +372,11 @@
   .xs\:w-1\/4 {
     @media (width >= 0rem) {
       width: calc(1/4 * 100%);
+    }
+  }
+  .xs\:p-4 {
+    @media (width >= 0rem) {
+      padding: calc(var(--spacing) * 4);
     }
   }
   .sm\:grid-cols-1 {
@@ -445,6 +407,11 @@
   .lg\:gap-3 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 3);
+    }
+  }
+  .lg\:p-2 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 2);
     }
   }
   .xl\:flex {
@@ -502,26 +469,6 @@
   syntax: "*";
   inherits: false;
   initial-value: 1;
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -612,11 +559,6 @@
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
