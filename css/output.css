@@ -267,6 +267,9 @@
   .justify-center {
     justify-content: center;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-\[50\%\] {
     border-radius: 50%;
   }
@@ -329,6 +332,14 @@
   .text-center {
     text-align: center;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -388,9 +399,24 @@
       }
     }
   }
+  .xs\:h-1 {
+    @media (width >= 0rem) {
+      height: calc(var(--spacing) * 1);
+    }
+  }
+  .xs\:h-20 {
+    @media (width >= 0rem) {
+      height: calc(var(--spacing) * 20);
+    }
+  }
   .xs\:w-1\/4 {
     @media (width >= 0rem) {
       width: calc(1/4 * 100%);
+    }
+  }
+  .xs\:w-25 {
+    @media (width >= 0rem) {
+      width: calc(var(--spacing) * 25);
     }
   }
   .xs\:p-4 {
@@ -402,6 +428,12 @@
     @media (width >= 0rem) {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .xs\:text-3xl {
+    @media (width >= 0rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
   .xs\:text-4xl {
@@ -426,9 +458,19 @@
       grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
+  .lg\:h-14 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 14);
+    }
+  }
   .lg\:w-3\/4 {
     @media (width >= 64rem) {
       width: calc(3/4 * 100%);
+    }
+  }
+  .lg\:w-20 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 20);
     }
   }
   .lg\:w-\[6\%\] {
