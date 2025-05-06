@@ -10,11 +10,11 @@
 
 /* 1280px 1670px */
 
-@media (min-width:1280px) and (max-width:1670px) {
+/* @media (min-width:1280px) and (max-width:1670px) {
     .title{
         font-size: 1.3rem;
     }
-}
+} */
 
 .contact-box{
     border-bottom: 5px solid;
