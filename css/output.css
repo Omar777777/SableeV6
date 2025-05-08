@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-950: oklch(27.9% 0.077 45.635);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-black: #000;
     --color-white: #fff;
@@ -213,20 +214,20 @@
   .table {
     display: table;
   }
-  .h-14 {
-    height: calc(var(--spacing) * 14);
-  }
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
   .w-4\/4 {
     width: calc(4/4 * 100%);
   }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
-  }
   .w-\[60\%\] {
     width: 60%;
+  }
+  .w-\[70\%\] {
+    width: 70%;
+  }
+  .w-\[75\%\] {
+    width: 75%;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -239,6 +240,24 @@
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-74 {
+    max-width: calc(var(--spacing) * 74);
+  }
+  .min-w-7 {
+    min-width: calc(var(--spacing) * 7);
+  }
+  .min-w-70 {
+    min-width: calc(var(--spacing) * 70);
+  }
+  .min-w-74 {
+    min-width: calc(var(--spacing) * 74);
+  }
+  .min-w-75 {
+    min-width: calc(var(--spacing) * 75);
+  }
+  .min-w-90 {
+    min-width: calc(var(--spacing) * 90);
   }
   .border-collapse {
     border-collapse: collapse;
@@ -266,9 +285,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .rounded {
-    border-radius: 0.25rem;
   }
   .rounded-\[50\%\] {
     border-radius: 50%;
@@ -302,14 +318,17 @@
   .border-b-gray-500 {
     border-bottom-color: var(--color-gray-500);
   }
+  .bg-amber-950 {
+    background-color: var(--color-amber-950);
+  }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-box-color {
     background-color: var(--color-box-color);
   }
   .bg-hero-color {
     background-color: var(--color-hero-color);
-  }
-  .bg-hover-color {
-    background-color: var(--color-hover-color);
   }
   .bg-main-color {
     background-color: var(--color-main-color);
@@ -331,18 +350,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .font-normal {
     --tw-font-weight: var(--font-weight-normal);
@@ -383,6 +390,10 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .outline-0 {
+    outline-style: var(--tw-outline-style);
+    outline-width: 0px;
+  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -397,11 +408,6 @@
       @media (hover: hover) {
         background-color: var(--color-hover-color);
       }
-    }
-  }
-  .xs\:h-1 {
-    @media (width >= 0rem) {
-      height: calc(var(--spacing) * 1);
     }
   }
   .xs\:h-20 {
@@ -473,19 +479,9 @@
       width: calc(var(--spacing) * 20);
     }
   }
-  .lg\:w-\[6\%\] {
+  .lg\:w-\[20\] {
     @media (width >= 64rem) {
-      width: 6%;
-    }
-  }
-  .lg\:w-\[50\%\] {
-    @media (width >= 64rem) {
-      width: 50%;
-    }
-  }
-  .lg\:w-\[60\%\%\] {
-    @media (width >= 64rem) {
-      width: 60%%;
+      width: 20;
     }
   }
   .lg\:w-\[60\%\] {
